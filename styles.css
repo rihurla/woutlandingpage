@@ -63,6 +63,60 @@ body {
     opacity: 0.8;
 }
 
+/* Beta Section */
+.beta-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.beta-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.beta-description {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.beta-button {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background: #007AFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.beta-button:hover {
+    background: #0051D5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 122, 255, 0.4);
+}
+
+.beta-button:active {
+    transform: translateY(0);
+}
+
+.beta-note {
+    font-size: 0.85rem;
+    color: #999999;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
 /* Animations */
 @keyframes float {
     0%, 100% {
@@ -95,6 +149,18 @@ body {
         width: 160px;
         height: 160px;
     }
+    
+    .beta-section {
+        padding: 1.5rem;
+    }
+    
+    .beta-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .beta-description {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -109,6 +175,24 @@ body {
     .logo-img {
         width: 120px;
         height: 120px;
+    }
+    
+    .beta-section {
+        padding: 1.25rem;
+        margin-top: 2rem;
+    }
+    
+    .beta-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .beta-description {
+        font-size: 0.9rem;
+    }
+    
+    .beta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
     }
 }
 
