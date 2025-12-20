@@ -30,7 +30,7 @@
                 <a href="https://apps.apple.com/gb/app/wout-weekly-workout/id6753923956" class="download-button" target="_blank" rel="noopener noreferrer">
                     <img src="assets/appstore-button.svg" alt="Download on the App Store">
                 </a>
-                <div class="qr-code">
+                <div class="qr-code" onclick="openQrModal()">
                     <img src="assets/wout-qr-code.png" alt="Scan to download WOut">
                 </div>
             </div>
@@ -71,5 +71,33 @@
             <a href="https://tally.so/r/VLL5pE" class="footer-link" target="_blank" rel="noopener noreferrer">Contact</a>
         </div>
     </footer>
+
+    <div class="qr-modal" id="qrModal" onclick="closeQrModal(event)">
+        <div class="qr-modal-content">
+            <img src="assets/wout-qr-code.png" alt="Scan to download WOut">
+            <p>Scan to download WOut</p>
+        </div>
+    </div>
+
+    <script>
+        function openQrModal() {
+            document.getElementById('qrModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQrModal(event) {
+            if (event.target === document.getElementById('qrModal')) {
+                document.getElementById('qrModal').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.getElementById('qrModal').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 </html>
