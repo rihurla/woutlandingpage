@@ -8,134 +8,168 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <style>
-        .legal-content {
+        .page-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
+            padding-top: 6rem;
             text-align: left;
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        
-        .legal-content h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+
+        .page-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
             text-align: center;
             color: #ffffff;
         }
-        
-        .legal-content h2 {
-            font-size: 1.3rem;
-            margin-top: 2rem;
+
+        .page-content h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
             margin-bottom: 1rem;
             color: #ffffff;
         }
-        
-        .legal-content p {
-            margin-bottom: 1rem;
-            color: #cccccc;
+
+        .page-content p {
+            margin-bottom: 1.25rem;
+            color: #b0b0b0;
+            font-size: 1.1rem;
         }
-        
+
+        .page-content ul {
+            color: #b0b0b0;
+            padding-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .page-content ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .page-content a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        .page-content a:hover {
+            text-decoration: underline;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 2rem;
             color: #007AFF;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
-        
+
         .back-link:hover {
             text-decoration: underline;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 2.5rem 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="legal-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>Privacy Policy</h1>
-            
-            <p>This Privacy Policy applies to the WOut app (hereby referred to as the <em>"Application"</em>) for mobile devices, created by Ricardo Hurla (hereby referred to as the <em>"Service Provider"</em>) as a free service. This service is provided <strong>"as is."</strong></p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Information Collection and Use</h2>
-            <p>The Application collects limited information necessary to deliver its features and improve performance. Specifically:</p>
-            <ul style="color: #cccccc; margin-left: 2rem;">
-                <li><strong>Health Data:</strong> The Application may access data from Apple Health (HealthKit), including workout data, active energy, weight, height, heart rate, and other metrics authorised by the user.</li>
-                <li><strong>iCloud Data:</strong> The Application may use Apple’s iCloud service to synchronise workout records and app data securely across your devices.</li>
-                <li><strong>In-App Purchases and Subscriptions:</strong> The Application integrates with <strong>RevenueCat</strong> to manage subscriptions and purchases. RevenueCat processes anonymous identifiers, purchase history, and subscription status for this purpose.</li>
-                <li><strong>Analytics:</strong> The Application may use <strong>TelemetryDeck</strong> to collect anonymised usage information such as app opens, feature usage, and device type. This helps the Service Provider understand general usage patterns and improve the Application.</li>
-            </ul>
-            
-            <p>The Service Provider does <strong>not</strong> collect personal identifiers such as names, email addresses, or exact locations. All HealthKit and iCloud data remain under the user's control via Apple's systems.</p>
-            
-            <p><strong>TestFlight Beta:</strong> If you are testing a beta version of the Application through Apple's TestFlight programme, additional crash logs and diagnostic information may be collected by Apple and shared with the Service Provider to improve app stability and fix bugs. This data collection is managed by Apple's TestFlight service and is subject to Apple's privacy policies.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Third-Party Services</h2>
-            <p>The Application uses the following trusted third-party services, which have their own Privacy Policies regarding data handling:</p>
-            <ul style="color: #cccccc; margin-left: 2rem;">
-                <li><a href="https://telemetrydeck.com/privacy/" style="color: #007AFF;">TelemetryDeck</a></li>
-                <li><a href="https://www.revenuecat.com/privacy" style="color: #007AFF;">RevenueCat</a></li>
-                <li><a href="https://tally.so/help/privacy-policy" style="color: #007AFF;">Tally.so</a> (for contact forms and feedback collection)</li>
-            </ul>
-            <p>These services may collect anonymised, aggregated usage data as part of their normal operation. The Service Provider ensures that no personally identifiable information is transmitted to these services beyond what is strictly necessary for functionality.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Data Disclosure</h2>
-            <p>The Service Provider may disclose user-provided or automatically collected information only:</p>
-            <ul style="color: #cccccc; margin-left: 2rem;">
-                <li>when required by law (for example, to comply with a subpoena or legal process);</li>
-                <li>when disclosure is necessary to protect rights, safety, or prevent fraud; or</li>
-                <li>with trusted service providers acting on behalf of the Service Provider, who have agreed to adhere to this Privacy Policy and may not use the data independently.</li>
-            </ul>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Opt-Out Rights</h2>
-            <p>You may stop all data collection by uninstalling the Application. Standard uninstall processes on your device or through the App Store will remove the Application and its locally stored data.</p>
-            <p>You may also manage data permissions for Apple Health and iCloud at any time through <strong>Settings → Health → Data Access &amp; Devices</strong> or <strong>Settings → Apple ID → iCloud</strong> on your device.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Data Retention Policy</h2>
-            <p>The Service Provider retains user-provided data only for as long as the Application is installed and in use. Because data is stored locally and synchronised via iCloud, users can delete it at any time by removing it from the Application or their iCloud account.</p>
-            <p>If you would like to request deletion of any data associated with your use of the Application, please contact <strong>rihurladev@gmail.com</strong>. The Service Provider will respond within a reasonable timeframe.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Children's Privacy</h2>
-            <p>The Application is not directed at children under 13 years of age, and the Service Provider does not knowingly collect personal data from children.</p>
-            <p>If a child under 13 has provided personal information, the Service Provider will promptly delete it. Parents or guardians who believe their child has submitted personal information are encouraged to contact <strong>rihurladev@gmail.com</strong> so that appropriate action can be taken.</p>
-            <p>In accordance with applicable law, users must generally be <strong>at least 16 years old</strong> to consent to data processing in their region.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Security</h2>
-            <p>The Service Provider is committed to protecting your information. All HealthKit and iCloud data are secured through Apple’s infrastructure, and the Application itself does not transmit data to external servers controlled by the Service Provider.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Changes to This Privacy Policy</h2>
-            <p>This Privacy Policy may be updated periodically. You are encouraged to review this page occasionally for any updates. Changes will take effect immediately upon posting on this page.</p>
-            <p>This Privacy Policy is effective as of <strong>9 November 2025</strong>.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Your Consent</h2>
-            <p>By using the Application, you consent to the collection and use of information as outlined in this Privacy Policy, including any future amendments posted on this page.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <h2>Contact Us</h2>
-            <p>If you have any questions or concerns regarding privacy while using the Application, please contact the Service Provider at <strong>rihurladev@gmail.com</strong>.</p>
-            
-            <hr style="border: none; border-top: 1px solid #333; margin: 2rem 0;">
-            
-            <p style="font-size: 0.9rem; color: #888; text-align: center; font-style: italic;">This Privacy Policy was originally generated using <a href="https://app-privacy-policy-generator.nisrulz.com/" style="color: #007AFF;">App Privacy Policy Generator</a> and has been adapted for clarity, accuracy, and British English usage.</p>
-        </div>
+    <header class="nav">
+        <nav class="nav-container">
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="credits.html" class="nav-link">Credits</a>
+            <a href="https://tally.so/r/VLL5pE" class="nav-link" target="_blank" rel="noopener noreferrer">Contact</a>
+            <a href="https://apps.apple.com/gb/app/wout-weekly-workout/id6753923956" class="nav-link nav-cta" target="_blank" rel="noopener noreferrer">Download the App</a>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Privacy Policy</h1>
+
+        <p>This Privacy Policy applies to the WOut app (hereby referred to as the <em>"Application"</em>) for mobile devices, created by Ricardo Hurla (hereby referred to as the <em>"Service Provider"</em>) as a free service. This service is provided <strong>"as is."</strong></p>
+
+        <hr class="divider">
+
+        <h2>Information Collection and Use</h2>
+        <p>The Application collects limited information necessary to deliver its features and improve performance. Specifically:</p>
+        <ul>
+            <li><strong>Health Data:</strong> The Application may access data from Apple Health (HealthKit), including workout data, active energy, weight, height, heart rate, and other metrics authorised by the user.</li>
+            <li><strong>iCloud Data:</strong> The Application may use Apple's iCloud service to synchronise workout records and app data securely across your devices.</li>
+            <li><strong>In-App Purchases and Subscriptions:</strong> The Application integrates with <strong>RevenueCat</strong> to manage subscriptions and purchases. RevenueCat processes anonymous identifiers, purchase history, and subscription status for this purpose.</li>
+            <li><strong>Analytics:</strong> The Application may use <strong>TelemetryDeck</strong> to collect anonymised usage information such as app opens, feature usage, and device type. This helps the Service Provider understand general usage patterns and improve the Application.</li>
+        </ul>
+
+        <p>The Service Provider does <strong>not</strong> collect personal identifiers such as names, email addresses, or exact locations. All HealthKit and iCloud data remain under the user's control via Apple's systems.</p>
+
+        <p><strong>TestFlight Beta:</strong> If you are testing a beta version of the Application through Apple's TestFlight programme, additional crash logs and diagnostic information may be collected by Apple and shared with the Service Provider to improve app stability and fix bugs. This data collection is managed by Apple's TestFlight service and is subject to Apple's privacy policies.</p>
+
+        <hr class="divider">
+
+        <h2>Third-Party Services</h2>
+        <p>The Application uses the following trusted third-party services, which have their own Privacy Policies regarding data handling:</p>
+        <ul>
+            <li><a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a></li>
+            <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a></li>
+            <li><a href="https://tally.so/help/privacy-policy">Tally.so</a> (for contact forms and feedback collection)</li>
+        </ul>
+        <p>These services may collect anonymised, aggregated usage data as part of their normal operation. The Service Provider ensures that no personally identifiable information is transmitted to these services beyond what is strictly necessary for functionality.</p>
+
+        <hr class="divider">
+
+        <h2>Data Disclosure</h2>
+        <p>The Service Provider may disclose user-provided or automatically collected information only:</p>
+        <ul>
+            <li>when required by law (for example, to comply with a subpoena or legal process);</li>
+            <li>when disclosure is necessary to protect rights, safety, or prevent fraud; or</li>
+            <li>with trusted service providers acting on behalf of the Service Provider, who have agreed to adhere to this Privacy Policy and may not use the data independently.</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>Opt-Out Rights</h2>
+        <p>You may stop all data collection by uninstalling the Application. Standard uninstall processes on your device or through the App Store will remove the Application and its locally stored data.</p>
+        <p>You may also manage data permissions for Apple Health and iCloud at any time through <strong>Settings → Health → Data Access &amp; Devices</strong> or <strong>Settings → Apple ID → iCloud</strong> on your device.</p>
+
+        <hr class="divider">
+
+        <h2>Data Retention Policy</h2>
+        <p>The Service Provider retains user-provided data only for as long as the Application is installed and in use. Because data is stored locally and synchronised via iCloud, users can delete it at any time by removing it from the Application or their iCloud account.</p>
+        <p>If you would like to request deletion of any data associated with your use of the Application, please contact <strong>rihurladev@gmail.com</strong>. The Service Provider will respond within a reasonable timeframe.</p>
+
+        <hr class="divider">
+
+        <h2>Children's Privacy</h2>
+        <p>The Application is not directed at children under 13 years of age, and the Service Provider does not knowingly collect personal data from children.</p>
+        <p>If a child under 13 has provided personal information, the Service Provider will promptly delete it. Parents or guardians who believe their child has submitted personal information are encouraged to contact <strong>rihurladev@gmail.com</strong> so that appropriate action can be taken.</p>
+        <p>In accordance with applicable law, users must generally be <strong>at least 16 years old</strong> to consent to data processing in their region.</p>
+
+        <hr class="divider">
+
+        <h2>Security</h2>
+        <p>The Service Provider is committed to protecting your information. All HealthKit and iCloud data are secured through Apple's infrastructure, and the Application itself does not transmit data to external servers controlled by the Service Provider.</p>
+
+        <hr class="divider">
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated periodically. You are encouraged to review this page occasionally for any updates. Changes will take effect immediately upon posting on this page.</p>
+        <p>This Privacy Policy is effective as of <strong>9 November 2025</strong>.</p>
+
+        <hr class="divider">
+
+        <h2>Your Consent</h2>
+        <p>By using the Application, you consent to the collection and use of information as outlined in this Privacy Policy, including any future amendments posted on this page.</p>
+
+        <hr class="divider">
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns regarding privacy while using the Application, please contact the Service Provider at <strong>rihurladev@gmail.com</strong>.</p>
+
+        <hr class="divider">
+
+        <p style="font-size: 0.95rem; color: #888; font-style: italic;">This Privacy Policy was originally generated using <a href="https://app-privacy-policy-generator.nisrulz.com/">App Privacy Policy Generator</a> and has been adapted for clarity, accuracy, and British English usage.</p>
     </div>
     
     <footer class="footer">
